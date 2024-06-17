@@ -56,7 +56,25 @@ const config: Config = {
         id: "frontend",
         path: "frontend",
         routeBasePath: "frontend",
-        sidebarPath: require.resolve("./sidebars.ts"),
+        sidebarPath: require.resolve("./sidebarsFrontend.ts"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "backend",
+        path: "backend",
+        routeBasePath: "backend",
+        sidebarPath: require.resolve("./sidebarsBackend.ts"),
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "data",
+        path: "data",
+        routeBasePath: "data",
+        sidebarPath: require.resolve("./sidebarData.ts"),
       },
     ],
   ],
@@ -79,6 +97,8 @@ const config: Config = {
         },
 
         { to: "/frontend/intro", label: "Frontend", position: "left" },
+        { to: "/backend/intro", label: "Backend", position: "left" },
+        { to: "/data/intro", label: "Base de datos", position: "left" },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/facebook/docusaurus",

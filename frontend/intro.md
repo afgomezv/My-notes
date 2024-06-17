@@ -1,4 +1,6 @@
 ---
+id: intro
+title: Introduction a Frontend
 sidebar_position: 0
 ---
 
