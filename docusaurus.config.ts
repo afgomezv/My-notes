@@ -49,6 +49,18 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "frontend",
+        path: "frontend",
+        routeBasePath: "frontend",
+        sidebarPath: require.resolve("./sidebars.ts"),
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
@@ -65,6 +77,8 @@ const config: Config = {
           position: "left",
           label: "Tutorial",
         },
+
+        { to: "/frontend/intro", label: "Frontend", position: "left" },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/facebook/docusaurus",
