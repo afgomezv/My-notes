@@ -92,3 +92,21 @@ export default App;
 
 Este es un ejemplo de Markdown page example. 2022. Todos los derechos reservados. [^1]
 [^1]: Este es un ejemplo de pie de página.
+
+## Deployment en GitHub Pages
+
+Configurar docusaurus.config.ts la url y abseUrl de acuerdo al repositorio de github
+
+```json
+  url: "https://afgomezv.github.io",
+  baseUrl: "/my-notes/",
+  organizationName: "afgomezv",
+  projectName: "my-notes",
+  deploymentBranch: "gh-pages",
+```
+
+Ejecutar deploy en github pages
+
+```
+ cmd /C 'set "GIT_USER=afgomezv" && npm run deploy'
+```
