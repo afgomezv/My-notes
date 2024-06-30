@@ -69,7 +69,7 @@ const mysql = require("mysql2/promise");
 async function connectDB() {
   const connection = await mysql.createConnection({
     host: "us-east.connect.psdb.cloud",
-    user: "xrolj2z57yivxyiijm6g",
+    user: "user_one",
     password: "secret_password",
     database: "expressframework",
     ssl: {
