@@ -77,6 +77,15 @@ const config: Config = {
         sidebarPath: require.resolve("./sidebarData.ts"),
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "english",
+        path: "english",
+        routeBasePath: "english",
+        sidebarPath: require.resolve("./sidebarsEnglish.ts"),
+      },
+    ],
   ],
 
   themeConfig: {
@@ -99,6 +108,7 @@ const config: Config = {
         { to: "/frontend/intro", label: "Frontend", position: "left" },
         { to: "/backend/intro", label: "Backend", position: "left" },
         { to: "/data/intro", label: "Base de datos", position: "left" },
+        { to: "/english/intro", label: "Ingles", position: "left" },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/facebook/docusaurus",
